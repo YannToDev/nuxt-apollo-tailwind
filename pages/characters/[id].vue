@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-20 max-w-xl mx-auto">
         <CharacterCard 
             :id="data.character.id"
             :name="data.character.name"

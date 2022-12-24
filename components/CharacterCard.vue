@@ -1,15 +1,13 @@
 <template>
 
-    <div class="flex mr-3 bg-gray-300 rounded-xl">
+    <div class="m-3 bg-gray-300 rounded-xl flex justify-center">
         <NuxtLink :to="`/characters/${props.id}`">
             <NuxtImg
                 :src="props.image"
                 :modifiers="grayScaleWhenDead"
-                 width="200"
-                 height="200"
-                 class="rounded-l-xl"
+                 class="rounded-xl mt-3 w-full"  
             />
-            <div class="m-3">
+            <div class="m-3 text-center">
                 <h3 class="text-xl mb-3">{{ props.name }}</h3>
                 <p>Status: {{ props.status }}</p>
                 <p>Species: {{ props.species }}</p>
